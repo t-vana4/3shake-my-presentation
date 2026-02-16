@@ -6,6 +6,8 @@
 
 ```
 .
+├── .github/workflows/deploy.yml     # GitHub Pages デプロイ用ワークフロー
+├── scripts/generate-index.mjs       # トップページ生成スクリプト
 ├── slides/                          # プレゼンテーション資料
 │   ├── example/                     # 3shake テーマのサンプル
 │   │   ├── public/                  # 画像などの静的ファイル
@@ -65,6 +67,29 @@ title: スライドタイトル
 ```
 
 3. `SLIDES` 環境変数でパスを指定して起動
+
+## GitHub Pages での公開
+
+mainブランチにpushすると GitHub Actions で全スライドが自動ビルドされ、GitHub Pages にSPAとして公開されます。
+
+### URL
+
+| ページ | URL |
+|--------|-----|
+| トップ（一覧） | `https://<user>.github.io/3shake-my-presentation/` |
+| 各スライド | `https://<user>.github.io/3shake-my-presentation/<slide-name>/` |
+
+トップページではカード形式でスライドが一覧表示され、クリックするとモーダル内でスライドを操作（ページ送り）できます。
+
+### 仕組み
+
+- `slides/` 配下の各ディレクトリを `slidev build` でSPAとしてビルド
+- `scripts/generate-index.mjs` がスライド一覧のインデックスページを生成
+- 各カードは iframe によるライブプレビューを表示
+
+### GitHub リポジトリ側の設定
+
+Settings > Pages で **Source** を **GitHub Actions** に設定してください。
 
 ## AI によるスライド作成 (Claude Code)
 
