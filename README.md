@@ -6,20 +6,21 @@
 
 ```
 .
-├── .github/workflows/deploy.yml     # GitHub Pages デプロイ用ワークフロー
-├── scripts/generate-index.mjs       # トップページ生成スクリプト
-├── slides/                          # プレゼンテーション資料
-│   ├── example/                     # 3shake テーマのサンプル
-│   │   ├── public/                  # 画像などの静的ファイル
-│   │   └── slides.md                # スライド本体
-│   └── why-is-pm-training-so-difficult/  # PMの育成はなぜ難しいのか？
-│       ├── public/
-│       └── slides.md
-├── themes/                          # カスタムテーマ
-│   └── 3shake/                      # 3shake テーマ
-│       ├── layouts/                 # レイアウト (cover, default, section)
-│       ├── public/                  # ロゴ画像
-│       └── styles/                  # CSS
+├── .github/workflows/deploy.yml              # GitHub Pages デプロイ用ワークフロー
+├── scripts/generate-index.mjs                # トップページ生成スクリプト
+├── slides/                                   # プレゼンテーションスライド
+│   ├── example/                              # 3shake テーマのサンプル
+│   │   ├── public/                          # 画像などの静的ファイル
+│   │   └── slides.md                        # スライド本体
+│   ├── why-is-pm-training-so-difficult/
+│   │   ├── public/
+│   │   └── slides.md
+│   └── ...
+├── themes/                                   # カスタムテーマ
+│   └── 3shake/                               # 3shake テーマ
+│       ├── layouts/                          # レイアウト (cover, default, section)
+│       ├── public/                           # ロゴ画像
+│       └── styles/                           # CSS
 ├── package.json
 └── pnpm-lock.yaml
 ```
@@ -63,6 +64,7 @@ SLIDES=slides/why-is-pm-training-so-difficult/slides.md pnpm export
 ---
 theme: ../../themes/3shake
 title: スライドタイトル
+transition: slide-left
 ---
 ```
 
