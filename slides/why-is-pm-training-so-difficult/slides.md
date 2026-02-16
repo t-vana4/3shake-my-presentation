@@ -2,6 +2,7 @@
 theme: ../../themes/3shake
 title: PMの育成はなぜ難しいのか？
 layout: cover
+transition: fade
 ---
 
 # PMの育成はなぜ難しいのか？
