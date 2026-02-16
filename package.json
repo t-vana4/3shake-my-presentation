@@ -1,6 +1,7 @@
 {
   "name": "3shake-my-presentation",
   "private": true,
+  "packageManager": "pnpm@10.29.3",
   "scripts": {
     "dev": "slidev ${SLIDES:-slides/example/slides.md} --open",
     "build": "slidev build ${SLIDES:-slides/example/slides.md}",
