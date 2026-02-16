@@ -12,7 +12,7 @@ transition: slide-left
 <br>
 
 <div style="display: flex; align-items: center; gap: 10px;">
-  <img src="/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
+  <img src="/common/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
   <span style="font-size: 16px; font-weight: bold; padding: 0 10px 0 20px;">2026/02/20<br>vana4</span>
 </div>
 
@@ -352,7 +352,7 @@ layout: section
     </div>
     <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 8px;">
       <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
+        <img src="/common/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
         <span style="font-size: 16px; font-weight: bold; color: var(--color-dark-text);">vana4</span>
       </div>
       <img src="https://zenn.dev/images/logo-only-dark.png" alt="Zenn" style="height: 50px;" />

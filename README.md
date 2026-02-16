@@ -7,13 +7,17 @@
 ```
 .
 ├── .github/workflows/deploy.yml              # GitHub Pages デプロイ用ワークフロー
+├── assets/                                   # 共通アセット（全スライドで共有）
+│   └── common/                              # プロフィール画像など
 ├── scripts/generate-index.mjs                # トップページ生成スクリプト
 ├── slides/                                   # プレゼンテーションスライド
 │   ├── example/                              # 3shake テーマのサンプル
 │   │   ├── public/                           # 画像などの静的ファイル
+│   │   │   └── common -> ../../../assets/common  # 共通アセットへのシンボリックリンク
 │   │   └── slides.md                         # スライド本体
 │   ├── why-is-pm-training-so-difficult/
 │   │   ├── public/
+│   │   │   └── common -> ../../../assets/common
 │   │   └── slides.md
 │   └── ...
 ├── themes/                                   # カスタムテーマ
@@ -55,10 +59,31 @@ SLIDES=slides/why-is-pm-training-so-difficult/slides.md pnpm build
 SLIDES=slides/why-is-pm-training-so-difficult/slides.md pnpm export
 ```
 
+## 共通アセット
+
+複数のスライドで使う画像（プロフィール画像など）は `assets/common/` に配置し、各スライドの `public/common` からシンボリックリンクで参照します。
+
+### Markdown での参照方法
+
+```html
+<img src="/common/profile.png" />
+```
+
+### 共通アセットの追加
+
+`assets/common/` にファイルを追加するだけで、全スライドから `/common/ファイル名` で参照できます。
+
 ## 新しいスライドの追加
 
 1. `slides/` 配下にディレクトリを作成
-2. `slides.md` を作成し、frontmatter でテーマを指定
+2. `public/` ディレクトリを作成し、共通アセットへのシンボリックリンクを追加
+
+```bash
+mkdir -p slides/<slide-name>/public
+ln -s ../../../assets/common slides/<slide-name>/public/common
+```
+
+3. `slides.md` を作成し、frontmatter でテーマを指定
 
 ```markdown
 ---
@@ -68,7 +93,7 @@ transition: slide-left
 ---
 ```
 
-3. `SLIDES` 環境変数でパスを指定して起動
+4. `SLIDES` 環境変数でパスを指定して起動
 
 ## GitHub Pages での公開
 
