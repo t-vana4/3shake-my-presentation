@@ -1,6 +1,7 @@
 ---
 theme: ../../themes/3shake
 title: 3-SHAKE Slidev テーマ サンプル
+transition: fade
 ---
 
 # 3-SHAKE Slidev テーマ
