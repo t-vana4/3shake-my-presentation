@@ -10,8 +10,8 @@
 ├── scripts/generate-index.mjs                # トップページ生成スクリプト
 ├── slides/                                   # プレゼンテーションスライド
 │   ├── example/                              # 3shake テーマのサンプル
-│   │   ├── public/                          # 画像などの静的ファイル
-│   │   └── slides.md                        # スライド本体
+│   │   ├── public/                           # 画像などの静的ファイル
+│   │   └── slides.md                         # スライド本体
 │   ├── why-is-pm-training-so-difficult/
 │   │   ├── public/
 │   │   └── slides.md
