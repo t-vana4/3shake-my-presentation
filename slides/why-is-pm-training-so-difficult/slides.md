@@ -11,7 +11,10 @@ transition: slide-left
 
 <br>
 
-2026/02/20　立花 創
+<div style="display: flex; align-items: center; gap: 10px;">
+  <img src="/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
+  <span style="font-size: 16px; font-weight: bold; padding: 0 10px 0 20px;">2026/02/20<br>vana4</span>
+</div>
 
 ---
 
@@ -154,11 +157,13 @@ layout: section
     <strong>交換（取引）</strong>になってしまう
   </div>
 </div>
+<div style="flex: 1; text-align: left; padding-top: 10px;">
+  <span class="person person-xl person-green"></span>
+</div>
 
 <br>
-<br>
 
-感謝を強要する「贈与」は、もはや贈与ではなく「取引」
+感謝を強要する「贈与」は、もはや贈与ではなく **「取引」**
 
 ---
 
@@ -199,7 +204,7 @@ PMの仕事は、メンバーに「PMのおかげだ」と
 <br>
 
 <div class="flex gap-lg flex-start">
-  <div class="box box-green-outline" style="flex: 1; font-size: 30px; font-weight: 700; text-align: center;">PMの育成 = 背中を見せるしかない？</div>
+  <div class="box box-green-outline" style="flex: 1; font-size: 26px; font-weight: 700; text-align: center; color: var(--color-green);">結局、PMの育成は背中を見せるしかない？</div>
 </div>
 
 ---
@@ -235,9 +240,9 @@ layout: section
 
 <div class="flex flex-col" style="align-items: center;">
   <div class="flex flex-wrap gap-lg" style="justify-content: center; margin-bottom: 40px;">
-    <span class="box box-green-outline" style="font-size: 24px; padding: 12px 28px;">贈与</span>
-    <span class="box box-green-outline" style="font-size: 24px; padding: 12px 28px;">利他</span>
-    <span class="box box-green-outline" style="font-size: 24px; padding: 12px 28px;">アンサング・ヒーロー</span>
+    <span class="box box-green-outline" style="font-size: 24px; padding: 12px 28px; color: var(--color-green);">贈与</span>
+    <span class="box box-green-outline" style="font-size: 24px; padding: 12px 28px; color: var(--color-green);">利他</span>
+    <span class="box box-green-outline" style="font-size: 24px; padding: 12px 28px; color: var(--color-green);">アンサング・ヒーロー</span>
   </div>
 </div>
 
@@ -258,6 +263,9 @@ layout: section
   <div class="bubble bubble-green-outline bubble-tail-bottom" style="flex: 1; font-size: 20px;">
     スムーズに進んだ裏には誰のどんな動きがあったのか？
   </div>
+</div>
+<div style="flex: 1; text-align: left; padding-top: 10px;">
+  <span class="person person-xl person-green"></span>
 </div>
 
 ---
@@ -319,7 +327,7 @@ layout: section
 <br>
 
 互いの贈与に気づき、称え合える。
-**そんなチームを、一緒に作っていきましょう。**
+<span class="marker-green">**そんなチームを、一緒に作っていきましょう。**</span>
 
 <br>
 
@@ -345,7 +353,7 @@ layout: section
     <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 8px;">
       <div style="display: flex; align-items: center; gap: 10px;">
         <img src="/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
-        <span style="font-size: 16px; font-weight: bold; color: #888;">vana4</span>
+        <span style="font-size: 16px; font-weight: bold; color: var(--color-dark-text);">vana4</span>
       </div>
       <img src="https://zenn.dev/images/logo-only-dark.png" alt="Zenn" style="height: 50px;" />
     </div>
