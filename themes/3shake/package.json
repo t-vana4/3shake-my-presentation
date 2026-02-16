@@ -1,0 +1,12 @@
+{
+  "name": "slidev-theme-3shake",
+  "version": "1.0.0",
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "fonts": {
+        "sans": "Noto Sans JP, Hiragino Kaku Gothic ProN, Hiragino Sans, BIZ UDPGothic, Yu Gothic, Meiryo, sans-serif"
+      }
+    }
+  }
+}

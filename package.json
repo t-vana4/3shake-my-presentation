@@ -1,0 +1,13 @@
+{
+  "name": "3shake-my-presentation",
+  "private": true,
+  "scripts": {
+    "dev": "slidev ${SLIDES:-slides/example/slides.md} --open",
+    "build": "slidev build ${SLIDES:-slides/example/slides.md}",
+    "export": "slidev export ${SLIDES:-slides/example/slides.md}"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.0.0",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}
