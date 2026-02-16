@@ -76,8 +76,8 @@ mainブランチにpushすると GitHub Actions で全スライドが自動ビ�
 
 | ページ | URL |
 |--------|-----|
-| トップ（一覧） | `https://<user>.github.io/3shake-my-presentation/` |
-| 各スライド | `https://<user>.github.io/3shake-my-presentation/<slide-name>/` |
+| トップ（一覧） | `https://t-vana4.github.io/3shake-my-presentation/` |
+| 各スライド | `https://t-vana4.github.io/3shake-my-presentation/<slide-name>/` |
 
 トップページではカード形式でスライドが一覧表示され、クリックするとモーダル内でスライドを操作（ページ送り）できます。
 
