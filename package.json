@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "slidev ${SLIDES:-slides/example/slides.md} --open",
     "build": "slidev build ${SLIDES:-slides/example/slides.md}",
+    "build:all": "for dir in slides/*/; do slide_name=$(basename \"$dir\"); echo \"Building: $slide_name\"; slidev build \"$dir/slides.md\" --base \"/${npm_package_name}/${slide_name}/\" --out \"../../dist/${slide_name}\"; done",
     "export": "slidev export ${SLIDES:-slides/example/slides.md}"
   },
   "devDependencies": {
