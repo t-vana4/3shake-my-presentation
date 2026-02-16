@@ -97,11 +97,13 @@ function greet(user: User): string {
 
 # ステップとマーカー
 
-<div style="margin-bottom: 24px;">
-  <span class="step step-green">1</span> 要件定義を行う<br/>
-  <span class="step step-blue">2</span> 設計・実装を進める<br/>
-  <span class="step step-yellow">3</span> テスト・デプロイ
+<div class="flex flex-col gap-lg">
+  <div><span class="step step-green">1</span> 要件定義を行う</div>
+  <div><span class="step step-blue">2</span> 設計・実装を進める</div>
+  <div><span class="step step-yellow">3</span> テスト・デプロイ</div>
 </div>
+
+<br>
 
 <p>
   <span class="marker-green">グリーンのマーカー</span>で重要な部分を強調できます。
@@ -124,6 +126,8 @@ layout: section
 グリーンの吹き出し（下向き）
 </div>
 
+<br>
+
 <div class="bubble bubble-blue bubble-tail-top">
 ブルーの吹き出し（上向き・塗り）
 </div>
@@ -133,5 +137,3 @@ layout: cover
 ---
 
 # ご清聴ありがとうございました
-
-お問い合わせは info@3-shake.com まで
