@@ -338,15 +338,16 @@ layout: section
 <br>
 
 <a href="https://zenn.dev/t_vana4/articles/c13b3eaaa9f5e3" target="_blank" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; border: 1px solid #ddd; border-radius: 12px; overflow: hidden; max-width: 720px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-    <div style="flex: 1; padding: 24px 28px; display: flex; flex-direction: column; justify-content: space-between;">
-      <div style="font-size: 22px; font-weight: 700; color: var(--color-dark-text); line-height: 1.4;">
-        PMの育成はなぜ難しいのか？ ー「贈与」の視点で考える「見えない仕事」の伝え方ー
+  <div style="background: #fff; border: 1px solid #d6e3ed; border-radius: 12px; max-width: 700px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 28px 32px; display: flex; flex-direction: column; gap: 20px;">
+    <div style="font-size: 24px; font-weight: 700; color: #333; line-height: 1.5;">
+      PMの育成はなぜ難しいのか？ ー「贈与」の視点で考える「見えない仕事」の伝え方ー
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 8px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="/profile.png" alt="vana4" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
+        <span style="font-size: 16px; font-weight: bold; color: #888;">vana4</span>
       </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px;">
-        <span style="font-size: 16px; color: var(--color-gray);">vana4</span>
-        <img src="https://zenn.dev/images/logo-only-dark.png" alt="Zenn" style="height: 50px;" />
-      </div>
+      <img src="https://zenn.dev/images/logo-only-dark.png" alt="Zenn" style="height: 50px;" />
     </div>
   </div>
 </a>
