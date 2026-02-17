@@ -33,7 +33,6 @@
 .content :deep(h2) {
   font-size: 36px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.10em;
   margin: 30px 0 0 0;
   padding: 0;

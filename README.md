@@ -8,7 +8,7 @@
 .
 ├── .github/workflows/deploy.yml              # GitHub Pages デプロイ用ワークフロー
 ├── assets/                                   # 共通アセット（全スライドで共有）
-│   └── common/                              # プロフィール画像など
+│   └── common/                               # プロフィール画像など
 ├── scripts/generate-index.mjs                # トップページ生成スクリプト
 ├── slides/                                   # プレゼンテーションスライド
 │   ├── example/                              # 3shake テーマのサンプル
@@ -23,10 +23,14 @@
 ├── themes/                                   # カスタムテーマ
 │   └── 3shake/                               # 3shake テーマ
 │       ├── layouts/                          # レイアウト (cover, default, section)
+│       ├── package.json                      # テーマ設定（カラー・フォント）
 │       ├── public/                           # ロゴ画像
+│       ├── setup/                            # Slidev セットアップ
+│       │   └── shiki.ts                      # シンタックスハイライト設定
 │       └── styles/                           # CSS
 ├── package.json
-└── pnpm-lock.yaml
+├── pnpm-lock.yaml
+└── pnpm-workspace.yaml
 ```
 
 ## セットアップ

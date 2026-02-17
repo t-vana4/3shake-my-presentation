@@ -10,10 +10,12 @@
   },
   "devDependencies": {
     "@slidev/cli": "^52.0.0",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.58.2"
   },
   "dependencies": {
     "@ktym4a/slidev-theme-ktym4a": "^0.3.2",
+    "@slidev/types": "^52.12.0",
     "slidev-theme-geist": "^0.8.1",
     "slidev-theme-nord": "^0.0.6"
   }

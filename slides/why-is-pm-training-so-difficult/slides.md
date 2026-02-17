@@ -53,15 +53,15 @@ layout: section
 <div class="flex flex-center gap-lg" style="margin-top: 24px;">
   <div class="flex flex-col">
     <span class="badge badge-lg badge-green" style="width: 150px; height: 150px; font-size: 24px;">旗振り</span>
-    <span class="note">目的とゴールを示す</span>
+    <span class="note text-center">目的とゴールを示す</span>
   </div>
   <div class="flex flex-col">
     <span class="badge badge-lg badge-green" style="width: 150px; height: 150px; font-size: 24px;">秩序の<br>構築</span>
-    <span class="note">必要な仕組みを整える</span>
+    <span class="note text-center">必要な仕組みを整える</span>
   </div>
   <div class="flex flex-col">
     <span class="badge badge-lg badge-green" style="width: 150px; height: 150px; font-size: 24px;">意思決定</span>
-    <span class="note">重要事項の判断を下す</span>
+    <span class="note text-center">重要事項の判断を下す</span>
   </div>
 </div>
 
