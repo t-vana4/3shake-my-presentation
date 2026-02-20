@@ -19,16 +19,12 @@ transition: slide-left
 
 # ワンライナー
 
-<div class="box box-blue" style="font-size: 28px; text-align: center; padding: 32px;">
-  日本のエンタープライズ企業に、<br><strong>セキュリティ・ガバナンスと現場の自由を両立する</strong><br>統合AIプラットフォームを提供する
+<div class="flex flex-center" style="text-align: center;">
+  <img src="/geake_logo.svg" style="width: 350px;" />
 </div>
 
-<br>
-
-<div style="text-align: center;">
-  <div class="bubble bubble-blue-outline bubble-tail-bottom" style="display: inline-block; font-size: 24px; padding: 20px 40px;">
-    <span class="marker-blue"><strong>AIを禁止するのではなく、可視化して制御する</strong></span>
-  </div>
+<div class="box box-blue-outline" style="font-size: 28px; text-align: center; padding: 32px; margin-top: 24px;">
+  日本のエンタープライズ企業に、<br><span class="marker-blue"><strong>セキュリティ・ガバナンスと現場の自由を両立する</strong></span><br>統合AIプラットフォームを提供する
 </div>
 
 <!--
