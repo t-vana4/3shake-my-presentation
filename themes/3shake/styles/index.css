@@ -466,3 +466,90 @@
 .flow-gray { border: 3px solid var(--color-gray); color: var(--color-gray); }
 .flow-gray-fill { background-color: var(--color-gray); color: var(--color-white); border: none; }
 .flow-navy-fill { background-color: var(--color-navy); color: var(--color-white); border: none; }
+
+/* ============================================
+ * Numbered List
+ * Usage:
+ *   <div class="numbered-list">
+ *     <div class="nl-row">
+ *       <div class="nl-label">項目1</div>
+ *       <div class="nl-desc">説明文1</div>
+ *     </div>
+ *   </div>
+ * ============================================ */
+.numbered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+.nl-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nl-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+.nl-desc {
+  flex: 1;
+  padding: 14px 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 20px;
+  background: var(--color-white);
+}
+
+/* ============================================
+ * Metrics
+ * Usage:
+ *   <div class="metrics">
+ *     <div class="metric">
+ *       <div class="metric-value"><span class="metric-num">100</span><span class="metric-unit">%</span></div>
+ *       <div class="metric-label">ラベル</div>
+ *     </div>
+ *   </div>
+ * ============================================ */
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.metric-value {
+  display: flex;
+  align-items: baseline;
+}
+.metric-num {
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--color-green);
+  line-height: 1;
+}
+.metric-unit {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-green);
+  margin-left: 2px;
+}
+.metric-label {
+  font-size: 20px;
+  color: var(--color-gray);
+  margin-top: 8px;
+}

@@ -64,6 +64,8 @@ function greet(user: User): string {
   <span class="badge badge-navy">Navy</span>
 </div>
 
+<br>
+
 ## ラベル
 
 <div class="flex flex-wrap">
@@ -111,14 +113,6 @@ function greet(user: User): string {
 </p>
 
 ---
-layout: section
----
-
-# 01
-
-## セクション区切り
-
----
 
 # 吹き出し
 
@@ -131,6 +125,130 @@ layout: section
 <div class="bubble bubble-blue bubble-tail-top">
 ブルーの吹き出し（上向き・塗り）
 </div>
+
+---
+
+# ナンバーリスト
+
+キーメッセージ
+
+<div class="numbered-list">
+  <div class="nl-row">
+    <div class="nl-label">項目1</div>
+    <div class="nl-desc">説明文1</div>
+  </div>
+  <div class="nl-row">
+    <div class="nl-label">項目2</div>
+    <div class="nl-desc">説明文2</div>
+  </div>
+  <div class="nl-row">
+    <div class="nl-label">項目3</div>
+    <div class="nl-desc">説明文3</div>
+  </div>
+</div>
+
+---
+
+# メトリクス
+
+キーメッセージ
+
+<br>
+
+<div class="metrics">
+  <div class="metric">
+    <div class="metric-value"><span class="metric-num">100</span><span class="metric-unit">%</span></div>
+    <div class="metric-label">ラベル1</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value"><span class="metric-num">200</span><span class="metric-unit">件</span></div>
+    <div class="metric-label">ラベル2</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value"><span class="metric-num">3.5</span></div>
+    <div class="metric-label">ラベル3</div>
+  </div>
+</div>
+
+---
+layout: section
+---
+
+# 01
+
+## セクション区切り
+
+---
+layout: line-chart
+labels: ["1月", "2月", "3月", "4月"]
+series:
+  - name: 売上
+    color: green
+    data: [100, 130, 150, 180]
+  - name: 利益
+    color: dark
+    data: [20, 30, 40, 60]
+  - name: コスト
+    color: yellow
+    data: [80, 85, 85, 95]
+---
+
+# 折れ線グラフ
+
+全指標が改善傾向
+
+---
+layout: horizontal-bar
+items:
+  - label: 営業
+    value: 400
+  - label: 開発
+    value: 300
+  - label: マーケ
+    value: 200
+  - label: 管理
+    value: 100
+---
+
+# 横棒グラフ
+
+営業部門がトップ
+
+---
+layout: stacked-bar
+items:
+  - label: モバイル
+    value: 55
+  - label: PC
+    value: 35
+  - label: タブレット
+    value: 10
+---
+
+# 100%積み上げ棒
+
+モバイルユーザーが過半数
+
+---
+layout: vertical-bar
+items:
+  - label: "2021"
+    value: 100
+  - label: "2022"
+    value: 150
+  - label: "2023"
+    value: 200
+  - label: "2024"
+    value: 250
+  - label: "2025"
+    value: 300
+---
+
+# 縦棒グラフ
+
+2025年が過去最高
+
+<br>
 
 ---
 layout: cover
