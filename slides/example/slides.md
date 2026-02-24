@@ -12,21 +12,16 @@ transition: slide-left
 
 ---
 
-# コンテンツスライド
+# テキストと引用の表示例
 
-## テキストとリスト
-
-- 箇条書き1
-- 箇条書き2
-- 箇条書き3
+本文テキストは Noto Sans JP で表示されます。
+遠くからでも読みやすいサイズを意識しています。
 
 > 引用テキストはこのように表示されます
 
 ---
 
-# コードブロック
-
-## TypeScript の例
+# TypeScript のコード表示
 
 ```typescript
 interface User {
@@ -41,9 +36,7 @@ function greet(user: User): string {
 
 ---
 
-# テーブル
-
-## プロジェクト一覧
+# プロジェクト一覧をテーブルで表示
 
 | プロジェクト | 状態 | 担当 |
 |---|---|---|
@@ -53,9 +46,7 @@ function greet(user: User): string {
 
 ---
 
-# ユーティリティクラス
-
-## バッジ
+# バッジで状態を表現する
 
 <div class="flex gap-lg">
   <span class="badge badge-green">Green</span>
@@ -66,7 +57,9 @@ function greet(user: User): string {
 
 <br>
 
-## ラベル
+<br>
+
+<br>
 
 <div class="flex flex-wrap">
   <span class="label label-green">Green</span>
@@ -77,7 +70,7 @@ function greet(user: User): string {
 
 ---
 
-# ボックスとフローチャート
+# ボックスで情報を強調する
 
 <div class="box box-green-outline">
 グリーンアウトラインのボックスです
@@ -86,6 +79,10 @@ function greet(user: User): string {
 <div class="box box-navy">
 ネイビーのボックスです（白文字）
 </div>
+
+---
+
+# フローチャートで処理の流れを示す
 
 <div class="flex flex-center gap-lg" style="margin-top: 32px;">
   <div class="flow-box flow-green">入力</div>
@@ -97,7 +94,7 @@ function greet(user: User): string {
 
 ---
 
-# ステップとマーカー
+# ステップ番号で手順を示す
 
 <div class="flex flex-col gap-lg">
   <div><span class="step step-green">1</span> 要件定義を行う</div>
@@ -105,16 +102,24 @@ function greet(user: User): string {
   <div><span class="step step-yellow">3</span> テスト・デプロイ</div>
 </div>
 
-<br>
+---
 
-<p>
-  <span class="marker-green">グリーンのマーカー</span>で重要な部分を強調できます。
-  <span class="marker-blue">ブルーのマーカー</span>も使えます。
-</p>
+# マーカーで重要箇所を強調する
+
+<span class="marker-green">グリーンのマーカー</span>で重要な部分を強調できます。
+<span class="marker-blue">ブルーのマーカー</span>も使えます。
+
+---
+layout: section
+---
+
+# 01
+
+## セクション区切り
 
 ---
 
-# 吹き出し
+# 吹き出しでコメントを表現する
 
 <div class="bubble bubble-green-outline bubble-tail-bottom">
 グリーンの吹き出し（下向き）
