@@ -1,7 +1,7 @@
 ---
 theme: ../../themes/3shake
 title: 3-SHAKE Slidev テーマ サンプル
-transition: slide-left
+transition: fade
 ---
 
 # 3-SHAKE Slidev テーマ
@@ -110,14 +110,6 @@ function greet(user: User): string {
 <span class="marker-blue">ブルーのマーカー</span>も使えます。
 
 ---
-layout: section
----
-
-# 01
-
-## セクション区切り
-
----
 
 # 吹き出しでコメントを表現する
 
@@ -133,7 +125,7 @@ layout: section
 
 ---
 
-# ナンバーリスト
+# ナンバーリストでメッセージを列挙する
 
 キーメッセージ
 
@@ -154,7 +146,7 @@ layout: section
 
 ---
 
-# メトリクス
+# メトリクスで数値を示す
 
 キーメッセージ
 
@@ -181,7 +173,7 @@ layout: section
 
 # 01
 
-## セクション区切り
+## グラフサンプル
 
 ---
 layout: line-chart
@@ -254,6 +246,128 @@ items:
 2025年が過去最高
 
 <br>
+
+---
+layout: section
+---
+
+# 02
+
+## レイアウトパターン例
+
+---
+
+# 期待と現実のギャップ
+
+AIコーディングで10倍速くなると思ったのに
+
+<div class="flex gap-lg" style="margin-top: 32px;">
+  <div class="box box-gray-outline" style="flex: 1;">
+    <div style="font-weight: 700; font-size: 24px; margin-bottom: 12px;">期待</div>
+    <div style="font-size: 20px; line-height: 1.8;">AIエージェントで10倍以上の生産性<br>複雑なタスクも自動化<br>コーディング時間の大幅削減</div>
+  </div>
+  <div class="box box-green" style="flex: 1;">
+    <div style="font-weight: 700; font-size: 24px; margin-bottom: 12px;">現実</div>
+    <div style="font-size: 20px; line-height: 1.8;">2〜3倍程度で頭打ち<br>場合によっては遅くなることすら<br>「AI疲れ」という新たな問題</div>
+  </div>
+</div>
+
+---
+
+# エンジニアリングの本質
+
+AIが「How（実装）」を担うほど、人間は「What / Why」に集中する
+
+<div class="flex gap-lg" style="margin-top: 32px;">
+  <div class="box box-blue-outline" style="flex: 1;">
+    <div style="font-weight: 700; font-size: 24px; color: var(--color-blue);">プログラミング</div>
+    <div style="font-size: 20px; line-height: 1.8;">既知の解法を正確に実装する</div>
+    <div style="font-size: 18px; line-height: 1.8; margin-top: 8px; color: var(--color-gray);">・仕様が決まっている<br>・入出力が明確<br>・正解がある</div>
+    <div style="font-size: 18px; margin-top: 12px;"><span class="note-blue">→ AIが最も得意な領域</span></div>
+  </div>
+  <div class="box box-green-outline" style="flex: 1;">
+    <div style="font-weight: 700; font-size: 24px; color: var(--color-green);">エンジニアリング</div>
+    <div style="font-size: 20px; line-height: 1.8;">未知の問題を試行錯誤で探索する</div>
+    <div style="font-size: 18px; line-height: 1.8; margin-top: 8px; color: var(--color-gray);">・何を作るべきかが不明確<br>・作ってみないとわからない<br>・正解がない中で判断する</div>
+    <div style="font-size: 18px; margin-top: 12px;"><span class="note-green">→ 人間の仕事として残る</span></div>
+  </div>
+</div>
+
+---
+
+# ボトルネックの上流化
+
+暗黙知を取り出しAIが扱える形に変換する
+
+<div class="flex flex-center" style="margin-top: 48px; gap: 24px;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <div class="flow-box flow-blue-fill" style="font-size: 18px;">実装</div>
+    <span class="note-blue">AIで解決</span>
+  </div>
+  <span class="arrow arrow-gray">→</span>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <div class="flow-box flow-green-fill" style="font-size: 18px;">要件定義</div>
+    <span class="note-green">AIで改善</span>
+  </div>
+  <span class="arrow arrow-gray">→</span>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <div class="flow-box flow-yellow-fill" style="font-size: 18px;">企画・仮説</div>
+    <span class="note-yellow">AIで支援</span>
+  </div>
+  <span class="arrow arrow-gray">→</span>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <div class="flow-box flow-navy-fill" style="font-size: 18px;">顧客の声</div>
+    <span class="note-navy" style="font-weight: 700;">ボトルネック</span>
+  </div>
+</div>
+
+---
+
+# アンラーニングの重要性
+
+これまでの「常識」を問い直す
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
+  <div class="box box-gray-outline" style="padding: 16px 20px;">
+    <div style="font-size: 18px;"><span class="step step-green" style="width: 36px; height: 36px; font-size: 16px;">1</span> <strong>「タスクは1個ずつ順番にやるもの」</strong></div>
+    <div style="font-size: 14px; margin-top: 15px; color: var(--color-gray);">AIエージェントで部下を無制限に持てる状態に。100件あるなら100件同時に仕掛ける</div>
+  </div>
+  <div class="box box-gray-outline" style="padding: 16px 20px;">
+    <div style="font-size: 18px;"><span class="step step-green" style="width: 36px; height: 36px; font-size: 16px;">2</span> <strong>「自分はToDoをこなす側」</strong></div>
+    <div style="font-size: 14px; margin-top: 15px; color: var(--color-gray);">AIがToDoを実行する側になった以上、人間はToDoを生み出す側にならなければいけない</div>
+  </div>
+  <div class="box box-gray-outline" style="padding: 16px 20px;">
+    <div style="font-size: 18px;"><span class="step step-green" style="width: 36px; height: 36px; font-size: 16px;">3</span> <strong>「作業を速くすれば全体が良くなる」</strong></div>
+    <div style="font-size: 14px; margin-top: 15px; color: var(--color-gray);">個別タスクの効率化は3倍程度で頭打ち。全体のアウトプット構造を変える必要がある</div>
+  </div>
+  <div class="box box-gray-outline" style="padding: 16px 20px;">
+    <div style="font-size: 18px;"><span class="step step-green" style="width: 36px; height: 36px; font-size: 16px;">4</span> <strong>「5人で半年」というプロジェクト粒度</strong></div>
+    <div style="font-size: 14px; margin-top: 15px; color: var(--color-gray);">チームで半年かけていた規模を1人にアサインし直す。タスクの粒度を10〜20倍に引き上げる</div>
+  </div>
+</div>
+
+---
+
+# 導入効果の実績
+
+3つの指標で改善を確認
+
+<br>
+
+<div class="metrics">
+  <div class="metric">
+    <div class="metric-value"><span class="metric-num">3.2</span><span class="metric-unit">倍</span></div>
+    <div class="metric-label">開発スループット</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value"><span class="metric-num">40</span><span class="metric-unit">%</span></div>
+    <div class="metric-label">レビュー工数削減</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value"><span class="metric-num">92</span><span class="metric-unit">%</span></div>
+    <div class="metric-label">チーム満足度</div>
+  </div>
+</div>
 
 ---
 layout: cover
